@@ -1,4 +1,5 @@
-﻿using Sources.Extensions;
+﻿using Sources.Behaviors;
+using Sources.Extensions;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -25,6 +26,8 @@ namespace Sources.Editor
 
             if (Camera.main != null)
                 Camera.main.transform.AttachToParent(camerasFolder);
+
+            setupFolder.gameObject.AddComponent<EntryPointBehavior>();
         }
 
         private static Transform CreateFolder(string name)
