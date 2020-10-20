@@ -1,11 +1,11 @@
-﻿using Sources.Behaviors;
-using Sources.Extensions;
+﻿using Assets.Sources.Behaviors;
+using Assets.Sources.Extensions;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Sources.Editor
+namespace Assets.Sources.Editor
 {
     [InitializeOnLoad]
     public class SceneGenerator

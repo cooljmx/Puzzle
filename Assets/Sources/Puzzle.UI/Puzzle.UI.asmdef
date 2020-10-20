@@ -1,0 +1,15 @@
+{
+    "name": "Puzzle.UI",
+    "references": [
+        "GUID:050ec1261324d5d4da0fca8a89b3a140"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
