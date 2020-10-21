@@ -1,30 +1,32 @@
-﻿using UnityEngine;
+﻿using _project.Sources.Puzzle.Domain;
+using UnityEngine;
 
 namespace _project.Sources.Behaviors
 {
     public class EntryPointBehavior : MonoBehaviour
     {
-        private void Awake()
+        public void Awake()
         {
         }
 
-        private void Start()
+        public void Start()
+        {
+            var exampleService = Resolver.Instance.Resolve<IExampleService>();
+        }
+
+        public void Update()
         {
         }
 
-        private void Update()
+        public void FixedUpdate()
         {
         }
 
-        private void FixedUpdate()
+        public void LateUpdate()
         {
         }
 
-        private void LateUpdate()
-        {
-        }
-
-        private void OnDestroy()
+        public void OnDestroy()
         {
         }
     }
