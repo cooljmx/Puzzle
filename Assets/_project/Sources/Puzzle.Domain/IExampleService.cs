@@ -1,4 +1,4 @@
-﻿namespace Assets.Sources.Puzzle.Domain
+﻿namespace _project.Sources.Puzzle.Domain
 {
     public interface IExampleService
     {

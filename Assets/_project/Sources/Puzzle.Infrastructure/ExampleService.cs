@@ -1,6 +1,6 @@
-﻿using Assets.Sources.Puzzle.Domain;
+﻿using _project.Sources.Puzzle.Domain;
 
-namespace Assets.Sources.Puzzle.Infrastructure
+namespace _project.Sources.Puzzle.Infrastructure
 {
     internal class ExampleService : IExampleService
     {

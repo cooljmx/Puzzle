@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Sources.Behaviors
+namespace _project.Sources.Behaviors
 {
     public class EntryPointBehavior : MonoBehaviour
     {

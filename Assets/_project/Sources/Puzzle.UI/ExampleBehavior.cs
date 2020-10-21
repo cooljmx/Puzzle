@@ -1,9 +1,9 @@
 ﻿using System;
-using Assets.Sources.Puzzle.Domain;
+using _project.Sources.Puzzle.Domain;
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace Assets.Sources.Puzzle.UI
+namespace _project.Sources.Puzzle.UI
 {
     [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
     public class ExampleBehavior : MonoBehaviour
