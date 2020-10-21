@@ -4,6 +4,7 @@ using UnityEngine.TestTools;
 
 namespace _project.Sources.UnitTests.Puzzle.Domain.Tests
 {
+    [TestFixture]
     public class NewTestScript
     {
         // A Test behaves as an ordinary method
@@ -11,6 +12,7 @@ namespace _project.Sources.UnitTests.Puzzle.Domain.Tests
         public void NewTestScriptSimplePasses()
         {
             // Use the Assert class to test conditions
+            Assert.Fail();
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use

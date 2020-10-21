@@ -2,7 +2,7 @@
 
 namespace _project.Sources.Puzzle.Infrastructure
 {
-    internal class ExampleService : IExampleService
+    public class ExampleService : IExampleService
     {
     }
 }
