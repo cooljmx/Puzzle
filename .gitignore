@@ -73,3 +73,5 @@ crashlytics-build.properties
 /[Pp]ackages
 /**/bin/
 /**/obj/
+
+.idea/
