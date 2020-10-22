@@ -11,21 +11,22 @@ namespace _project.Sources.Editor
             if (!(target is AutoSceneLoadingBehavior picker))
                 return;
 
-            var oldScene = AssetDatabase.LoadAssetAtPath<SceneAsset>(picker.targetScenePath);
-
             serializedObject.Update();
 
+            var oldScene = AssetDatabase.LoadAssetAtPath<SceneAsset>(picker.targetScenePath);
             EditorGUI.BeginChangeCheck();
+            if (EditorGUILayout.ObjectField("Target scene", oldScene, typeof(SceneAsset), false) is SceneAsset
+                pickedScene)
+                if (EditorGUI.EndChangeCheck())
+                {
+                    var newScenePath = AssetDatabase.GetAssetPath(pickedScene);
+                    var targetScenePathProperty = serializedObject
+                        .FindProperty(nameof(AutoSceneLoadingBehavior.targetScenePath));
+                    targetScenePathProperty.stringValue = newScenePath;
+                }
 
-            if (!(EditorGUILayout.ObjectField("scene", oldScene, typeof(SceneAsset), false) is SceneAsset pickedScene))
-                return;
 
-            if (EditorGUI.EndChangeCheck())
-            {
-                var newPath = AssetDatabase.GetAssetPath(pickedScene);
-                var scenePathProperty = serializedObject.FindProperty(nameof(AutoSceneLoadingBehavior.targetScenePath));
-                scenePathProperty.stringValue = newPath;
-            }
+            picker.minSecondsToLoading = EditorGUILayout.IntField("Min seconds to load", picker.minSecondsToLoading);
 
             serializedObject.ApplyModifiedProperties();
         }

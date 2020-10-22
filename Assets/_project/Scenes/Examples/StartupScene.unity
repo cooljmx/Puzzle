@@ -591,3 +591,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScenePath: Assets/_project/Scenes/Examples/MainMenuScene.unity
+  minSecondsToLoading: 5
